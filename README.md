@@ -1,5 +1,11 @@
 # qliksenseNotes
 
+## Operaciones con condicionales
+Sum(if(LocationType='Online',SalesAmount-(Cost * SalesQuantity) ))
+
+## Titulo Modificable dependiendo la selección
+= 'Ventas Totales por categoría = ' & num(Sum([SalesAmount]), '$#,##0')
+
 ## Diferencial en porcentaje, filtrando por estado, por producto y por periodo anterior y actual 
 (((sum({<Estado={'Distrito Federal','Estado de Mexico'},[ProNombre]={"XXX 300"},[semanaInicio]=[semanaInicio]>}[SOutMontoDesp])
 /
